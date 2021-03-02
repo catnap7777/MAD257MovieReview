@@ -137,6 +137,88 @@
             </objects>
             <point key="canvasLocation" x="-986" y="94"/>
         </scene>
+        <!--SearchVC-->
+        <scene sceneID="9w8-vA-nwd">
+            <objects>
+                <viewController id="AP6-8G-CKK" customClass="SearchVC" customModule="MAD257MovieReview" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y5Y-Cg-gb9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yr0-zz-oo9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MRu-PP-3Aw">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="177" translatesAutoresizingMaskIntoConstraints="NO" id="rqr-G9-EFc">
+                                <rect key="frame" x="301" y="169" width="1318" height="637"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAD257 - New York Times Movie Review API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pG-Wu-deq">
+                                        <rect key="frame" x="85" y="0.0" width="1148" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="67" id="L6r-Cs-n2G"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="54"/>
+                                        <color key="textColor" red="0.085154630240000001" green="0.0046270978640000002" blue="0.99615126850000002" alpha="0.9990234375" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="BxB-XV-Bvk">
+                                        <rect key="frame" x="0.0" y="244" width="1318" height="130"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fC0-uk-W51">
+                                                <rect key="frame" x="0.0" y="0.0" width="1318" height="48"/>
+                                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="stM-y3-v9K"/>
+                                                </constraints>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Search for a movie:">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="41" name="Noteworthy-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter movie title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LSH-Gj-9js">
+                                                <rect key="frame" x="0.0" y="82" width="1318" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="Az0-iM-xTq"/>
+                                                    <constraint firstAttribute="width" constant="1318" id="gv0-b9-RQW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSC-hw-7aD">
+                                        <rect key="frame" x="560" y="551" width="198" height="86"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Search"/>
+                                        <connections>
+                                            <action selector="searchButtonPressed:" destination="AP6-8G-CKK" eventType="primaryActionTriggered" id="zWI-TD-e5Z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rqr-G9-EFc" firstAttribute="centerX" secondItem="MRu-PP-3Aw" secondAttribute="centerX" id="4x2-oL-KYn"/>
+                            <constraint firstItem="rqr-G9-EFc" firstAttribute="top" secondItem="y5Y-Cg-gb9" secondAttribute="bottom" constant="109" id="xSS-J3-Byb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8IM-DU-Tqa"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchButton" destination="LSC-hw-7aD" id="gRV-Di-T5B"/>
+                        <outlet property="searchText" destination="LSH-Gj-9js" id="U2l-xD-POA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j7J-jv-vCa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-986" y="-1302"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Image" width="200" height="40"/>
