@@ -16,7 +16,7 @@ class SearchVC: UIViewController {
     var mySearchText: String = ""
     
     //.. array used for movie API info coming back
-    var movieArrayTup: [(xDisplayTitle: String, xMpaaRating: String, xCriticsPick: Int, xByline: String, xHeadline: String, xSummaryShort: String)] = [("","",0,"","","")]
+    var movieArrayTup: [(xDisplayTitle: String, xMpaaRating: String, xCriticsPick: Int, xByline: String, xHeadline: String, xSummaryShort: String, xUrl: String, xLinkText: String)] = [("","",0,"","","","","")]
     
     struct Results: Codable {
         
@@ -26,16 +26,29 @@ class SearchVC: UIViewController {
         let byline: String
         let headline: String
         let summaryShort: String
+        let link: Link
         
         private enum CodingKeys: String, CodingKey {
             case displayTitle = "display_title"        //..map JSON "display_title" to new name displayTitle
             case mpaaRating = "mpaa_rating"          //..map JSON "mpaa_rating" to new name mpaaRating
             case criticsPick = "critics_pick"          //..map JSON "critics_pick" to new name criticsPick
-            case byline = "byline"              //..map JSON "byline" to byline
-            case headline = "headline"              //..map JSON "headline" to headline
+            case byline = "byline"              //..map JSON "byline" to new name byline
+            case headline = "headline"              //..map JSON "headline" to new name headline
             case summaryShort = "summary_short"   //..map JSON "summary_short" to new name summaryShort
+            case link = "link"                      //..map JSON "link" to new name link
+            }
+        
+        struct Link: Codable {
+            let url: String
+            let linkText: String
+            
+            private enum CodingKeys: String, CodingKey {
+                case url = "url"                        //..map JSON url to new name url
+                case linkText = "suggested_link_text"   //.. map JSON "suggested_link_text" to linkText
             }
         }
+        
+    }
 
     struct Movie: Codable {
         
@@ -45,7 +58,6 @@ class SearchVC: UIViewController {
             case myResults = "results"       //..map JSON "results" to new name myResults
             
         }
-        
     }
         
       
@@ -126,12 +138,14 @@ class SearchVC: UIViewController {
                     let b = item.byline
                     let h = item.headline
                     let s = item.summaryShort
+                    let u = item.link.url
+                    let l = item.link.linkText
                     
-                    self.movieArrayTup.append((xDisplayTitle: t, xMpaaRating: r, xCriticsPick: c, xByline: b, xHeadline: h, xSummaryShort: s))
+                    self.movieArrayTup.append((xDisplayTitle: t, xMpaaRating: r, xCriticsPick: c, xByline: b, xHeadline: h, xSummaryShort: s, xUrl: u, xLinkText: l))
                     
                     hh += 1
                     
-                    print("The item retrieved is ===> \(t)")
+                    print("The item retrieved is ===> \(t) \(u) \(l)")
                 }
                 
             } catch {

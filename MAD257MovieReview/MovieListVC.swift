@@ -13,7 +13,7 @@ class MovieListVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
     @IBOutlet var movieTableView: UITableView!
     
     //.. array used for movie API info coming back
-    var movieArrayTupSorted2: [(xDisplayTitle: String, xMpaaRating: String, xCriticsPick: Int, xByline: String, xHeadline: String, xSummaryShort: String)] = [("","",0,"","","")]
+    var movieArrayTupSorted2: [(xDisplayTitle: String, xMpaaRating: String, xCriticsPick: Int, xByline: String, xHeadline: String, xSummaryShort: String, xUrl: String, xLinkText: String)] = [("","",0,"","","","","")]
     
     let cellID = "cellID"
     
@@ -64,6 +64,10 @@ class MovieListVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
         
         let mRowSelected = movieArrayTupSorted2[selectedRow ?? 0]
         
+        for item in movieArrayTupSorted2 {
+            print("#### inside movieArrayTupSorted2 = \(item.xDisplayTitle) - \(item.xSummaryShort), \(item.xUrl), \(item.xLinkText)")
+        }
+        
         let vc = segue.destination as! MovieDetailVC
         
         vc.displayTitle = mRowSelected.xDisplayTitle
@@ -72,6 +76,8 @@ class MovieListVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
         vc.byline = mRowSelected.xByline
         vc.headline = mRowSelected.xHeadline
         vc.summaryShort = mRowSelected.xSummaryShort
+        vc.url = mRowSelected.xUrl
+        vc.linkText = mRowSelected.xLinkText
         
     }
     

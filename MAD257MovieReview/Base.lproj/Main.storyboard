@@ -27,7 +27,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="rTh-C8-ip9">
-                                <rect key="frame" x="522" y="116" width="1244" height="934"/>
+                                <rect key="frame" x="522" y="116" width="1244" height="894"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rlu-Uk-yzR">
                                         <rect key="frame" x="0.0" y="0.0" width="1244" height="143"/>
@@ -199,8 +199,8 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cly-uP-79Q">
-                                        <rect key="frame" x="0.0" y="465" width="1244" height="469"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cly-uP-79Q">
+                                        <rect key="frame" x="0.0" y="465" width="1244" height="429"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08i-ex-yBm">
                                                 <rect key="frame" x="0.0" y="0.0" width="1244" height="48"/>
@@ -220,23 +220,16 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDf-XM-Fdf">
-                                                <rect key="frame" x="0.0" y="56" width="1244" height="413"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="summaryShort" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30W-7y-qcW">
-                                                        <rect key="frame" x="20" y="20" width="1244" height="373"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="1244" id="Del-X9-OO3"/>
-                                                            <constraint firstAttribute="height" constant="373" id="Qx7-PF-Igj"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <viewLayoutGuide key="contentLayoutGuide" id="Odt-8D-m2U"/>
-                                                <viewLayoutGuide key="frameLayoutGuide" id="8vF-Kc-HjR"/>
-                                            </scrollView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="summaryShort" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30W-7y-qcW">
+                                                <rect key="frame" x="0.0" y="56" width="1244" height="373"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1244" id="Del-X9-OO3"/>
+                                                    <constraint firstAttribute="height" constant="373" id="Qx7-PF-Igj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>

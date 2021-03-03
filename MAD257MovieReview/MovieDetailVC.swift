@@ -23,11 +23,15 @@ class MovieDetailVC: UIViewController {
     var byline = ""
     var headline = ""
     var summaryShort = ""
+    var url = ""
+    var linkText = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        print("summaryShort passed in = \(summaryShort)")
         
         
         if criticsPick == 0 {
