@@ -56,8 +56,6 @@ class SearchVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         let vc = segue.destination as! MovieListVC
-            
-        vc.finalName = self.searchText
        
         //.. if the movie names aren't equal, sort on the names asc... if they are equal, sort on the year desc
         let movieArrayTupSorted = movieArrayTup.sorted { $0.0 != $1.0 ? $0.0 < $1.0 : $0.1 > $1.1 }
@@ -143,8 +141,8 @@ class SearchVC: UIViewController {
                 // use `responseObject.data` to update model objects and/or UI here
                 
                 print("\nIn DispatchQueue -> .....)\n")
-//                        self.searchTextField.text = ""
-//                        self.performSegue(withIdentifier: "moviesSegue", sender: self)
+                self.searchText.text = ""
+                self.performSegue(withIdentifier: "moviesSegue", sender: self)
             }
             
             
