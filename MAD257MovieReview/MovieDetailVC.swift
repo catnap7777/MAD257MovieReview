@@ -16,6 +16,8 @@ class MovieDetailVC: UIViewController {
     @IBOutlet var bylineLabel: UILabel!
     @IBOutlet var headlineLabel: UILabel!
     @IBOutlet var summaryShortLabel: UILabel!
+    @IBOutlet var reviewDescLabel: UILabel!
+    @IBOutlet var urlLabel: UILabel!
     
     var displayTitle = ""
     var mpaaRating = ""
@@ -39,11 +41,16 @@ class MovieDetailVC: UIViewController {
         } else {
             criticsPickLabel.text = "*** Critic Pick ***"
         }
+        
         movieTitleLabel.text = displayTitle
         mpaaRatingLabel.text = mpaaRating
         summaryShortLabel.text = summaryShort
         bylineLabel.text = byline
         headlineLabel.text = headline
+        reviewDescLabel.text = linkText
+        urlLabel.text = url
+        
+        
     }
 
 
