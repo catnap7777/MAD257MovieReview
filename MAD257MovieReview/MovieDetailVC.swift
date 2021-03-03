@@ -15,7 +15,7 @@ class MovieDetailVC: UIViewController {
     @IBOutlet var criticsPickLabel: UILabel!
     @IBOutlet var bylineLabel: UILabel!
     @IBOutlet var headlineLabel: UILabel!
-    @IBOutlet var summaryShortLabel: UILabel!
+    @IBOutlet var summaryShortTextView: UITextView!
     @IBOutlet var reviewDescLabel: UILabel!
     @IBOutlet var urlLabel: UILabel!
     
@@ -31,10 +31,11 @@ class MovieDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //print("summaryShort passed in = \(summaryShort)")
         
-        print("summaryShort passed in = \(summaryShort)")
-        
+//        https://www.hackingwithswift.com/example-code/strings/replacing-text-in-a-string-using-replacingoccurrencesof
+        let summaryShortReplaced = summaryShort.replacingOccurrences(of: "&quot;", with: "\"")
+        //print("summaryShortReplaced ===== \(summaryShortReplaced)")
         
         if criticsPick == 0 {
             criticsPickLabel.text = "Not a Critic Pick"
@@ -42,9 +43,17 @@ class MovieDetailVC: UIViewController {
             criticsPickLabel.text = "*** Critic Pick ***"
         }
         
+        summaryShortTextView.isSelectable = true
+        summaryShortTextView.isScrollEnabled = true
+        summaryShortTextView.showsVerticalScrollIndicator = true
+        summaryShortTextView.isUserInteractionEnabled = true
+        summaryShortTextView.becomeFirstResponder()
+        summaryShortTextView.bounces = true
+        summaryShortTextView.panGestureRecognizer.allowedTouchTypes = [NSNumber(value: UITouch.TouchType.indirect.rawValue)]
+        
         movieTitleLabel.text = displayTitle
         mpaaRatingLabel.text = mpaaRating
-        summaryShortLabel.text = summaryShort
+        summaryShortTextView.text = summaryShortReplaced
         bylineLabel.text = byline
         headlineLabel.text = headline
         reviewDescLabel.text = linkText
@@ -52,7 +61,8 @@ class MovieDetailVC: UIViewController {
         
         
     }
-
-
+    
+    
+    
     
 }

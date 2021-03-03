@@ -169,8 +169,9 @@ class SearchVC: UIViewController {
         task.resume()
         
     }
+}
 
-            
+    //..  Retrieving JSON data the way MAD257Module7AppleTVWeather tutorial assignment from Bill worked.....
     //        if let url = NSURL(string: "https://api.darksky.net/forecast/ae58c5fa7285b492f6a553d200018d9e/42.5917,88.4334") {
     //
     //            if let data = NSData(contentsOf: url as URL) {
@@ -195,5 +196,4 @@ class SearchVC: UIViewController {
     //            } //.. end if
     //
     //        } //.. end closure
-    
-}
+//}
