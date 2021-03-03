@@ -88,7 +88,8 @@ class SearchVC: UIViewController {
         components.path = "/svc/movies/v2/reviews/search.json"
 //        components.path = "/search.json"
         components.queryItems = [
-            URLQueryItem(name: "query", value: "star+wars"),
+            URLQueryItem(name: "query", value: query),
+//            URLQueryItem(name: "query", value: "star+wars"),
             URLQueryItem(name: "api-key", value: "FDCZZDhyl6XVCQzqO06k6gLpdqmFTjHk")
             //URLQueryItem(name: "s", value: query)//,
         ]
@@ -126,9 +127,6 @@ class SearchVC: UIViewController {
                     
                     print("The item retrieved is ===> \(t)")
                 }
-                
-                print("movie array = \(self.movieArrayTup[1])")
-                print("3-first movie = \(self.movieArrayTup[0].xDisplayTitle)")
                 
             } catch {
                 print("Uh oh, that didn't work :(")

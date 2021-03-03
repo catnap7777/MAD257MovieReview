@@ -26,13 +26,14 @@ class MovieDetailVC: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        let cp: String = String(criticsPick)
-        print("cp = \(cp)")
+        if criticsPick == 0 {
+            criticsPickLabel.text = "Not A Critics Pick"
+        } else {
+            criticsPickLabel.text = "*** Critics Pick ***"
+        }
         
         movieTitleLabel.text = displayTitle
         mpaaRatingLabel.text = mpaaRating
-//        criticsPickLabel.text = String(criticsPick)
-        
         shortSummaryLabel.text = summaryShort
     }
 
