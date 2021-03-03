@@ -19,30 +19,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tygermatrix303" translatesAutoresizingMaskIntoConstraints="NO" id="LgC-pC-YU4">
-                                <rect key="frame" x="51" y="116" width="349" height="347"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="tygermatrix303" translatesAutoresizingMaskIntoConstraints="NO" id="LgC-pC-YU4">
+                                <rect key="frame" x="106" y="131" width="349" height="347"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="347" id="fFb-4G-tiY"/>
+                                    <constraint firstAttribute="height" constant="347" id="4aE-s8-cyc"/>
+                                    <constraint firstAttribute="width" constant="349" id="LfE-ue-Mgk"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="LfQ-g3-ymV">
-                                <rect key="frame" x="18" y="884" width="415" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="BU2-jf-5Wa"/>
-                                </constraints>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="tKA-Ux-hWl">
-                                <rect key="frame" x="457" y="116" width="1130" height="878"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="rTh-C8-ip9">
+                                <rect key="frame" x="522" y="116" width="1244" height="934"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QFh-dV-Eij">
-                                        <rect key="frame" x="0.0" y="0.0" width="1130" height="147"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rlu-Uk-yzR">
+                                        <rect key="frame" x="0.0" y="0.0" width="1244" height="143"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2e-SW-unF">
-                                                <rect key="frame" x="0.0" y="0.0" width="1130" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1244" height="48"/>
                                                 <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="Tij-LY-2vv"/>
-                                                    <constraint firstAttribute="width" constant="1130" id="mqr-Ur-BYw"/>
+                                                    <constraint firstAttribute="height" constant="48" id="E6M-4f-7IJ"/>
+                                                    <constraint firstAttribute="width" constant="1244" id="LK7-rg-GCL"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Movie Title">
@@ -56,29 +51,133 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="movieTitle" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdU-eN-fY2">
-                                                <rect key="frame" x="0.0" y="56" width="1130" height="91"/>
+                                                <rect key="frame" x="0.0" y="56" width="1244" height="87"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="91" id="be1-nu-uji"/>
-                                                    <constraint firstAttribute="width" constant="1130" id="xLz-lx-Xed"/>
+                                                    <constraint firstAttribute="width" constant="1244" id="7p5-n0-2cU"/>
+                                                    <constraint firstAttribute="height" constant="87" id="gKv-RR-J7C"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="41"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Is-0j-Xbk">
-                                        <rect key="frame" x="0.0" y="172" width="1130" height="104"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="Cgo-WJ-ZcE">
+                                        <rect key="frame" x="0.0" y="168" width="1244" height="104"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tw-Vb-e3E">
-                                                <rect key="frame" x="0.0" y="0.0" width="1130" height="48"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tPK-pZ-zRh">
+                                                <rect key="frame" x="0.0" y="0.0" width="324" height="104"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tw-Vb-e3E">
+                                                        <rect key="frame" x="0.0" y="0.0" width="324" height="48"/>
+                                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="324" id="fFA-bw-b54"/>
+                                                            <constraint firstAttribute="height" constant="48" id="fhT-I9-5KH"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="MPAA Rating">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="41" name="Noteworthy-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mpaaRating" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aun-MB-M61">
+                                                        <rect key="frame" x="0.0" y="56" width="324" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="1Qg-C1-PLU"/>
+                                                            <constraint firstAttribute="width" constant="324" id="xia-M5-UBZ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uUx-1C-ikt">
+                                                <rect key="frame" x="439" y="0.0" width="337" height="104"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYP-RO-rqD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="337" height="48"/>
+                                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="337" id="IZi-9U-wJt"/>
+                                                            <constraint firstAttribute="height" constant="48" id="pmd-Dq-Izm"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Critics Pick">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="41" name="Noteworthy-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="criticsPick" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B5-mc-gPz">
+                                                        <rect key="frame" x="0.0" y="56" width="337" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="Uwa-e3-th8"/>
+                                                            <constraint firstAttribute="width" constant="337" id="XiK-2c-iAE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VTh-ne-PwM">
+                                                <rect key="frame" x="891" y="0.0" width="353" height="104"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8V-jZ-fqt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="48"/>
+                                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="Ftg-z8-RoU"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="dF1-15-HVu"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Byline">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="41" name="Noteworthy-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="byline" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjM-P1-gDb">
+                                                        <rect key="frame" x="0.0" y="56" width="353" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="353" id="0A4-QC-C3B"/>
+                                                            <constraint firstAttribute="height" constant="48" id="2Tn-9Q-BKb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qoO-gl-oqv">
+                                        <rect key="frame" x="0.0" y="297" width="1244" height="143"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-cz-TY8">
+                                                <rect key="frame" x="0.0" y="0.0" width="1244" height="48"/>
                                                 <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="1130" id="WHO-vB-YdH"/>
-                                                    <constraint firstAttribute="height" constant="48" id="rdL-cn-fET"/>
+                                                    <constraint firstAttribute="height" constant="48" id="N4K-zh-mLh"/>
+                                                    <constraint firstAttribute="width" constant="1244" id="pdT-Kg-IXS"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="MPAA Rating">
+                                                    <fragment content="Headline">
                                                         <attributes>
                                                             <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" size="41" name="Noteworthy-Bold"/>
@@ -88,60 +187,27 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mpaaRating" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aun-MB-M61">
-                                                <rect key="frame" x="0.0" y="56" width="1130" height="48"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="headline" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7N-5h-wya">
+                                                <rect key="frame" x="0.0" y="56" width="1244" height="87"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="1130" id="MQb-qt-c8S"/>
-                                                    <constraint firstAttribute="height" constant="48" id="iE5-Dm-KHZ"/>
+                                                    <constraint firstAttribute="height" constant="87" id="6QD-Xa-wfL"/>
+                                                    <constraint firstAttribute="width" constant="1244" id="bcq-d7-8tD"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="41"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4fC-CZ-MDp">
-                                        <rect key="frame" x="0.0" y="301" width="1130" height="104"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYP-RO-rqD">
-                                                <rect key="frame" x="0.0" y="0.0" width="1130" height="48"/>
-                                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="1130" id="dpe-H3-MhU"/>
-                                                    <constraint firstAttribute="height" constant="48" id="ujR-nz-XER"/>
-                                                </constraints>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Critics Pick">
-                                                        <attributes>
-                                                            <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <font key="NSFont" size="41" name="Noteworthy-Bold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="criticsPick" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B5-mc-gPz">
-                                                <rect key="frame" x="0.0" y="56" width="1130" height="48"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="1130" id="5if-W3-1I3"/>
-                                                    <constraint firstAttribute="height" constant="48" id="L9H-CR-yIw"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="41"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="76s-Rh-Qb7">
-                                        <rect key="frame" x="0.0" y="430" width="1130" height="448"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cly-uP-79Q">
+                                        <rect key="frame" x="0.0" y="465" width="1244" height="469"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08i-ex-yBm">
-                                                <rect key="frame" x="0.0" y="0.0" width="1130" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1244" height="48"/>
                                                 <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="1130" id="DfY-8S-QIC"/>
-                                                    <constraint firstAttribute="height" constant="48" id="geA-9U-6Zq"/>
+                                                    <constraint firstAttribute="height" constant="48" id="tlq-07-c95"/>
+                                                    <constraint firstAttribute="width" constant="1244" id="wHD-hf-MZU"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Short Summary">
@@ -154,48 +220,60 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="shortSummary" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30W-7y-qcW">
-                                                <rect key="frame" x="0.0" y="56" width="1130" height="392"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="392" id="bH0-sK-qtJ"/>
-                                                    <constraint firstAttribute="width" constant="1130" id="xgY-Kj-p4g"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="41"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDf-XM-Fdf">
+                                                <rect key="frame" x="0.0" y="56" width="1244" height="413"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="summaryShort" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30W-7y-qcW">
+                                                        <rect key="frame" x="20" y="20" width="1244" height="373"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="1244" id="Del-X9-OO3"/>
+                                                            <constraint firstAttribute="height" constant="373" id="Qx7-PF-Igj"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="Odt-8D-m2U"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="8vF-Kc-HjR"/>
+                                            </scrollView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAD257 - New York Times Movie Review API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-LO-b1J">
-                                <rect key="frame" x="253" y="21" width="1148" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MAD257 - New York Times Movie Review API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-LO-b1J">
+                                <rect key="frame" x="386" y="20" width="1148" height="65"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="54"/>
                                 <color key="textColor" red="0.085154630240000001" green="0.0046270978640000002" blue="0.99615126850000002" alpha="0.9990234375" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="LfQ-g3-ymV">
+                                <rect key="frame" x="106" y="833" width="336" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="179" id="z5p-my-Jdd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="tKA-Ux-hWl" secondAttribute="trailing" constant="243" id="2t2-zu-f8O"/>
-                            <constraint firstItem="tKA-Ux-hWl" firstAttribute="leading" secondItem="LgC-pC-YU4" secondAttribute="trailing" constant="57" id="3Yv-e4-Y9t"/>
-                            <constraint firstItem="tKA-Ux-hWl" firstAttribute="leading" secondItem="LfQ-g3-ymV" secondAttribute="trailing" constant="24" id="K7N-Jo-cJL"/>
-                            <constraint firstItem="YAB-LO-b1J" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="163" id="Mp7-m2-xs5"/>
-                            <constraint firstItem="LgC-pC-YU4" firstAttribute="centerX" secondItem="LfQ-g3-ymV" secondAttribute="centerX" id="MxG-HG-AB4"/>
-                            <constraint firstItem="LgC-pC-YU4" firstAttribute="top" secondItem="YAB-LO-b1J" secondAttribute="bottom" constant="30" id="W5r-vG-JBm"/>
-                            <constraint firstItem="LgC-pC-YU4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="51" id="fda-r1-04O"/>
-                            <constraint firstItem="tKA-Ux-hWl" firstAttribute="top" secondItem="YAB-LO-b1J" secondAttribute="bottom" constant="30" id="oP6-ZL-AjP"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LfQ-g3-ymV" secondAttribute="bottom" constant="8" id="qXR-Pg-cmP"/>
-                            <constraint firstItem="YAB-LO-b1J" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="21" id="zP1-BC-gQl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LfQ-g3-ymV" secondAttribute="bottom" constant="8" id="2hi-93-m8n"/>
+                            <constraint firstItem="LgC-pC-YU4" firstAttribute="centerX" secondItem="LfQ-g3-ymV" secondAttribute="centerX" constant="6.5" id="Mv3-ly-icB"/>
+                            <constraint firstItem="LgC-pC-YU4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="106" id="geF-Gr-gYO"/>
+                            <constraint firstItem="rTh-C8-ip9" firstAttribute="leading" secondItem="LgC-pC-YU4" secondAttribute="trailing" constant="67" id="h8b-LO-QyZ"/>
+                            <constraint firstItem="rTh-C8-ip9" firstAttribute="top" secondItem="YAB-LO-b1J" secondAttribute="bottom" constant="31" id="uOB-Np-h0V"/>
+                            <constraint firstItem="YAB-LO-b1J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="386" id="vdo-Ji-eVi"/>
+                            <constraint firstItem="LgC-pC-YU4" firstAttribute="top" secondItem="YAB-LO-b1J" secondAttribute="bottom" constant="46" id="zqs-Om-4Ge"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                     </view>
                     <navigationItem key="navigationItem" id="giZ-Gr-jZ0"/>
                     <connections>
+                        <outlet property="bylineLabel" destination="DjM-P1-gDb" id="J04-Ku-OUf"/>
                         <outlet property="criticsPickLabel" destination="6B5-mc-gPz" id="2s9-Ri-yVc"/>
+                        <outlet property="headlineLabel" destination="u7N-5h-wya" id="z8h-TP-k4U"/>
                         <outlet property="movieTitleLabel" destination="RdU-eN-fY2" id="ubd-4w-Jrp"/>
                         <outlet property="mpaaRatingLabel" destination="Aun-MB-M61" id="FF0-az-nS6"/>
-                        <outlet property="shortSummaryLabel" destination="30W-7y-qcW" id="nCJ-50-INB"/>
+                        <outlet property="summaryShortLabel" destination="30W-7y-qcW" id="3CN-xK-lQ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -13,7 +13,7 @@ class MovieListVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
     @IBOutlet var movieTableView: UITableView!
     
     //.. array used for movie API info coming back
-    var movieArrayTupSorted2: [(xDisplayTitle: String, xMpaaRating: String, xCriticsPick: Int, xSummaryShort: String)] = [("","",0,"")]
+    var movieArrayTupSorted2: [(xDisplayTitle: String, xMpaaRating: String, xCriticsPick: Int, xByline: String, xHeadline: String, xSummaryShort: String)] = [("","",0,"","","")]
     
     let cellID = "cellID"
     
@@ -69,6 +69,8 @@ class MovieListVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
         vc.displayTitle = mRowSelected.xDisplayTitle
         vc.mpaaRating = mRowSelected.xMpaaRating
         vc.criticsPick = mRowSelected.xCriticsPick
+        vc.byline = mRowSelected.xByline
+        vc.headline = mRowSelected.xHeadline
         vc.summaryShort = mRowSelected.xSummaryShort
         
     }

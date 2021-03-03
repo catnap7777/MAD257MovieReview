@@ -16,19 +16,23 @@ class SearchVC: UIViewController {
     var mySearchText: String = ""
     
     //.. array used for movie API info coming back
-    var movieArrayTup: [(xDisplayTitle: String, xMpaaRating: String, xCriticsPick: Int, xSummaryShort: String)] = [("","",0,"")]
+    var movieArrayTup: [(xDisplayTitle: String, xMpaaRating: String, xCriticsPick: Int, xByline: String, xHeadline: String, xSummaryShort: String)] = [("","",0,"","","")]
     
     struct Results: Codable {
         
         let displayTitle: String
         let mpaaRating: String
         let criticsPick: Int
+        let byline: String
+        let headline: String
         let summaryShort: String
         
         private enum CodingKeys: String, CodingKey {
             case displayTitle = "display_title"        //..map JSON "display_title" to new name displayTitle
             case mpaaRating = "mpaa_rating"          //..map JSON "mpaa_rating" to new name mpaaRating
             case criticsPick = "critics_pick"          //..map JSON "critics_pick" to new name criticsPick
+            case byline = "byline"              //..map JSON "byline" to byline
+            case headline = "headline"              //..map JSON "headline" to headline
             case summaryShort = "summary_short"   //..map JSON "summary_short" to new name summaryShort
             }
         }
@@ -108,7 +112,7 @@ class SearchVC: UIViewController {
             let myResponse = response
             print("\nMy Url Response = \(String(describing: myResponse))")
             
-            var h = 0
+            var hh = 0
             
             let decoder = JSONDecoder()
             do {
@@ -119,11 +123,13 @@ class SearchVC: UIViewController {
                     let t = item.displayTitle
                     let r = item.mpaaRating
                     let c = item.criticsPick
+                    let b = item.byline
+                    let h = item.headline
                     let s = item.summaryShort
                     
-                    self.movieArrayTup.append((xDisplayTitle: t, xMpaaRating: r, xCriticsPick: c, xSummaryShort: s))
+                    self.movieArrayTup.append((xDisplayTitle: t, xMpaaRating: r, xCriticsPick: c, xByline: b, xHeadline: h, xSummaryShort: s))
                     
-                    h += 1
+                    hh += 1
                     
                     print("The item retrieved is ===> \(t)")
                 }

@@ -13,11 +13,15 @@ class MovieDetailVC: UIViewController {
     @IBOutlet var movieTitleLabel: UILabel!
     @IBOutlet var mpaaRatingLabel: UILabel!
     @IBOutlet var criticsPickLabel: UILabel!
-    @IBOutlet var shortSummaryLabel: UILabel!
+    @IBOutlet var bylineLabel: UILabel!
+    @IBOutlet var headlineLabel: UILabel!
+    @IBOutlet var summaryShortLabel: UILabel!
     
     var displayTitle = ""
     var mpaaRating = ""
     var criticsPick = 0
+    var byline = ""
+    var headline = ""
     var summaryShort = ""
 
     override func viewDidLoad() {
@@ -27,14 +31,15 @@ class MovieDetailVC: UIViewController {
         
         
         if criticsPick == 0 {
-            criticsPickLabel.text = "Not A Critics Pick"
+            criticsPickLabel.text = "Not a Critic Pick"
         } else {
-            criticsPickLabel.text = "*** Critics Pick ***"
+            criticsPickLabel.text = "*** Critic Pick ***"
         }
-        
         movieTitleLabel.text = displayTitle
         mpaaRatingLabel.text = mpaaRating
-        shortSummaryLabel.text = summaryShort
+        summaryShortLabel.text = summaryShort
+        bylineLabel.text = byline
+        headlineLabel.text = headline
     }
 
 
