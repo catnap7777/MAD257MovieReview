@@ -15,6 +15,8 @@ class SearchVC: UIViewController {
     
     var mySearchText: String = ""
     
+    var api = "FDCZZDhyl6XVCQzqO06k6gLpdqmFTjHk"
+    
     //.. array used for movie API info coming back
     var movieArrayTup: [(xDisplayTitle: String, xMpaaRating: String, xCriticsPick: Int, xByline: String, xHeadline: String, xSummaryShort: String, xUrl: String, xLinkText: String)] = [("","",0,"","","","","")]
     
@@ -106,7 +108,7 @@ class SearchVC: UIViewController {
         components.queryItems = [
             URLQueryItem(name: "query", value: query),
 //            URLQueryItem(name: "query", value: "star+wars"),
-            URLQueryItem(name: "api-key", value: "FDCZZDhyl6XVCQzqO06k6gLpdqmFTjHk")
+            URLQueryItem(name: "api-key", value: api)
             //URLQueryItem(name: "s", value: query)//,
         ]
         
